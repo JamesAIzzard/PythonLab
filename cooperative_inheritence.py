@@ -70,6 +70,7 @@ class IngredientAmount(Ingredient, HasQuantityTolerance):
     def __init__(self, **kwds):
         super().__init__(**kwds)
 
+    # We can block out a parent method like this:
     def persistence_data(self) -> Dict:
         raise NotImplementedError
 
