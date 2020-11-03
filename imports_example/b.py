@@ -11,7 +11,7 @@
 
 # But this is fine.
 from imports_example import a
-
+import imports_example  # Even this is fine, with A & B exposed in imports_example/__init__.py
 
 class B:
     def speak(self):
